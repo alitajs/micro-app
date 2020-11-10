@@ -1,12 +1,9 @@
 import { defineConfig } from 'alita';
 
 export default defineConfig({
-  appType: "h5",
+  appType: "native",
   mobileLayout: true,
   packageId: 'com.alitajs.micro',
   displayIcon: 'src/assets/logo.png',
   displayName: 'micro',
-  base: './',
-  publicPath: './',
-  outputPath: 'platforms/ios/www',
-})
+});

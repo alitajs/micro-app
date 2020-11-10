@@ -29,12 +29,20 @@ const Page: FC<PageProps> = () => {
       获取原生参数
     </Item>
     <Item onPress={async () => {
-      const res = await window.alita.device.scanCode({ onlyFromCamera: false });
-      Modal.alert({
+      try {
+        await window.alita.device.scanCode({ onlyFromCamera: false });
+      } catch (error) {
+Modal.alert({
         title: '扫码解析',
         content:
-          JSON.stringify(res),
+          JSON.stringify(error),
       })
+      }
+      // Modal.alert({
+      //   title: '扫码解析',
+      //   content:
+      //     JSON.stringify(res),
+      // })
     }}>
       扫码解析
     </Item>
@@ -49,7 +57,6 @@ const Page: FC<PageProps> = () => {
       获取相册
     </Item>
     <Item onPress={async () => {
-
       const res = await window.alita.device.platform();
       Modal.alert({
         title: '获取系统信息',
@@ -108,7 +115,7 @@ const Page: FC<PageProps> = () => {
         })
         return;
       }
-      const res = await window.alita.device.openMicroApp({ app: appList[0], userData: {} });
+      const res = await window.alita.device.openMicroApp({ app: {}, userData: {} });
       Modal.alert({
         title: '打开微应用',
         content:

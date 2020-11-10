@@ -1,6 +1,12 @@
 import { ResponseError } from 'umi-request';
 import { NavBarProps, TitleListItem, NavBarListItem, TabBarProps, TabBarListItem } from 'alita';
 
+import HomeGary from './assets/demoIcon/home.png';
+import HomeBlue from './assets/demoIcon/home1.png';
+import ListGary from './assets/demoIcon/list.png';
+import ListBlue from './assets/demoIcon/list1.png';
+
+
 export const request = {
   prefix: '',
   method: 'post',
@@ -33,7 +39,24 @@ const navBar: NavBarProps = {
   },
 };
 const tabList: TabBarListItem[] = [
-
+  {
+    pagePath: '/',
+    text: '首页',
+    iconPath: HomeGary,
+    selectedIconPath: HomeBlue,
+    title: '首页',
+    iconSize: '',
+    badge: '',
+  },
+  {
+    pagePath: '/dev',
+    text: '开发',
+    iconPath: ListGary,
+    selectedIconPath: ListBlue,
+    title: '开发',
+    iconSize: '',
+    badge: '',
+  },
 ];
 
 const tabBar: TabBarProps = {
