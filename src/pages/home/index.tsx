@@ -41,8 +41,7 @@ export default () => {
 	const [visible, setVisible] = React.useState(false)
     const [activeTab,setActiveTab] = React.useState("alipay")
 	const handleVisibleChange = (visible: boolean) => {
-        console.log(visible);
-        
+        console.log(visible);    
 		setVisible(visible)
 	}
 	const select = (opt: any) => {
@@ -267,7 +266,7 @@ export default () => {
 					</div>
 				</div>
 			</div>
-            <div style={{ position: 'fixed', height: '100%', width: '100%', top: 0 }}>
+            <div className="footer" >
                 <div className="demo-tabbar-wrap">
                     <div className="demo-tabbar-2">
                         <TabBar>

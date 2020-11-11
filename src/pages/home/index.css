@@ -123,6 +123,12 @@ body {
 .easy_pay .easy_pay_content div:nth-child(1) {
   border-right: 1px solid #ddd;
 }
+.footer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0 ;
+}
 .amd-search-input {
   flex: none !important;
 }
