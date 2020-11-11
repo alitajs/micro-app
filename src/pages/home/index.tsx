@@ -39,7 +39,7 @@ const { SwiperItem } = Swiper
 
 export default () => {
 	const [visible, setVisible] = React.useState(false)
-    const [activeTab,setActiveTab] = React.useState("")
+    const [activeTab,setActiveTab] = React.useState("alipay")
 	const handleVisibleChange = (visible: boolean) => {
         console.log(visible);
         
