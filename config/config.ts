@@ -6,4 +6,7 @@ export default defineConfig({
   packageId: 'com.alitajs.micro',
   displayIcon: 'src/assets/logo.png',
   displayName: 'micro',
+  microDevInItData: {
+    token: 'abc'
+  }
 });
