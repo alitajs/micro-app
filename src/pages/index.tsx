@@ -15,6 +15,10 @@ interface PageProps {
 const Page: FC<PageProps> = () => {
   const [appList, setApplist] = useState<any>([]);
 
+  useEffect(() => {
+    window.alita.ui.setNavBar({ backgroundColor: '00A0FF', color: 'FFFFFF', fontSize: '18' })
+  }, [])
+
   return (<List
     renderHeader="原生能力"
   >
@@ -102,13 +106,22 @@ const Page: FC<PageProps> = () => {
       下载保存文件到本地
     </Item>
     <Item onPress={async () => {
-      const res = await window.alita.device.fetchMicroAppList();
-      setApplist(res.list)
-      Modal.alert({
-        title: '获取微应用列表',
-        content:
-          JSON.stringify(res),
-      })
+      try {
+        const res = await window.alita.device.fetchMicroAppList();
+        setApplist(res.list)
+        Modal.alert({
+          title: '获取微应用列表',
+          content:
+            JSON.stringify(res),
+        })
+      } catch (error) {
+        Modal.alert({
+          title: '获取微应用列表',
+          content:
+            JSON.stringify(error),
+        })
+      }
+
     }}>
       获取微应用列表
     </Item>

@@ -1,3 +1,6 @@
 [submodule "platforms/ios"]
 	path = platforms/ios
 	url = https://github.com/alitajs/alita-ios.git
+[submodule "platforms/android"]
+	path = platforms/android
+	url = https://github.com/alitajs/alita-android
