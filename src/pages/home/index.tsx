@@ -31,11 +31,10 @@ import {
     Person,
     Alipay
 } from '@ant-design/mobile-icons'
-
-const TabBarItem = TabBar.Item
-
-const Item = Popover.Item
+const PopoverItem = Popover.Item
 const { SwiperItem } = Swiper
+const { Item } = List
+const TabBarItem = TabBar.Item
 
 export default () => {
 	const [visible, setVisible] = React.useState(false)
@@ -63,36 +62,36 @@ export default () => {
 					mask
 					visible={visible}
 					overlay={[
-						<Item
+						<PopoverItem
 							key="scan"
 							value="scan"
 							icon={ScanCode}
 							data-seed="logId"
 						>
 							扫一扫
-						</Item>,
-						<Item
+						</PopoverItem>,
+						<PopoverItem
 							key="special"
 							value="special"
 							badge={{ dot: true }}
 							icon={Qr}
 						>
 							收款
-						</Item>,
-						<Item key="car" value="car" icon={Help}>
+						</PopoverItem>,
+						<PopoverItem key="car" value="car" icon={Help}>
 							乘车码
-						</Item>,
-						<Item
+						</PopoverItem>,
+						<PopoverItem
 							key="assistant"
 							value="assistant"
 							badge={{ text: 123 }}
 							icon={Gift}
 						>
 							智能助理
-						</Item>,
-						<Item key="life" value="life" icon={Help}>
+						</PopoverItem>,
+						<PopoverItem key="life" value="life" icon={Help}>
 							会生活
-						</Item>,
+						</PopoverItem>,
 					]}
 					align={{
 						overflow: { adjustY: 0, adjustX: 0 },
@@ -101,7 +100,7 @@ export default () => {
 					onVisibleChange={(visible) => handleVisibleChange(visible)}
 					onSelect={(opt) => select(opt)}
 				>				
-					<img src={HeaderMore} width={60}/>				
+					<img src={HeaderMore} width={50}/>				
 				</Popover>
 			</div>
 			<div className="header_card">

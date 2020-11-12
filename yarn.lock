@@ -9,9 +9,10 @@
     lodash.debounce "^4.0.8"
     lodash.throttle "^4.1.1"
 
-"@alitajs/alita-layout@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@alitajs/alita-layout/-/alita-layout-2.3.0.tgz#025fd0722982d2b7ffea123a3a8284849a2754bf"
+"@alitajs/alita-layout@2.4.0-beta.1":
+  version "2.4.0-beta.1"
+  resolved "https://registry.npm.taobao.org/@alitajs/alita-layout/download/@alitajs/alita-layout-2.4.0-beta.1.tgz#5dfc58e4d914a283101091e1b9105c87032af31a"
+  integrity sha1-XfxY5NkUooMQEJHhuRBchwMq8xo=
   dependencies:
     antd-mobile "^2.2.14"
     history "^4.9.0"
@@ -19,9 +20,10 @@
     react-document-title "^2.0.3"
     react-router-dom "^5.1.2"
 
-"@alitajs/cordova@2.5.17-beta.3":
-  version "2.5.17-beta.3"
-  resolved "https://registry.yarnpkg.com/@alitajs/cordova/-/cordova-2.5.17-beta.3.tgz#db7c3d818b13b3b4747ef0ed14ea4a7693e157c1"
+"@alitajs/cordova@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.npm.taobao.org/@alitajs/cordova/download/@alitajs/cordova-2.6.2.tgz#1bdf7df7535773a826a4b1fe5ab7df9f1683f673"
+  integrity sha1-G99991NXc6gmpLH+WrffnxaD9nM=
   dependencies:
     cordova-app-hello-world "^4.0.0"
     cordova-common "^3.1.0"
@@ -36,89 +38,114 @@
     tmp "^0.1.0"
     valid-identifier "^0.0.2"
 
-"@alitajs/generate@2.5.17-beta.3":
-  version "2.5.17-beta.3"
-  resolved "https://registry.yarnpkg.com/@alitajs/generate/-/generate-2.5.17-beta.3.tgz#cba0bdab593f7b91281d64034e75020ddadf5077"
+"@alitajs/generate@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.npm.taobao.org/@alitajs/generate/download/@alitajs/generate-2.6.2.tgz#64e2e7a7d5955e6ff46b93d6ca3941ade5d90b7b"
+  integrity sha1-ZOLnp9WVXm/0a5PWyjlBreXZC3s=
 
-"@alitajs/hd@2.5.17-beta.3":
-  version "2.5.17-beta.3"
-  resolved "https://registry.yarnpkg.com/@alitajs/hd/-/hd-2.5.17-beta.3.tgz#fef2d198186538949e9710ce7c5a353f4f0f6fd2"
+"@alitajs/hd@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.npm.taobao.org/@alitajs/hd/download/@alitajs/hd-2.6.2.tgz#5c953b8d2f0d1480aeb46d67e34f009f067a5c3a"
+  integrity sha1-XJU7jS8NFICutG1n408AnwZ6XDo=
   dependencies:
     postcss-plugin-px2rem "0.8.1"
     umi-hd "5.0.1"
 
-"@alitajs/keep-alive@2.5.17-beta.3":
-  version "2.5.17-beta.3"
-  resolved "https://registry.yarnpkg.com/@alitajs/keep-alive/-/keep-alive-2.5.17-beta.3.tgz#17911705d23071e4061937cb5aad9e5d0c172ab4"
+"@alitajs/keep-alive@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.npm.taobao.org/@alitajs/keep-alive/download/@alitajs/keep-alive-2.6.2.tgz#bf3d5a32edae33b82c8c628bab0fa0badcec83d5"
+  integrity sha1-vz1aMu2uM7gsjGKLqw+gutzsg9U=
 
-"@alitajs/layout@2.5.17-beta.3":
-  version "2.5.17-beta.3"
-  resolved "https://registry.yarnpkg.com/@alitajs/layout/-/layout-2.5.17-beta.3.tgz#955aeae76dc85b75efdc3658e3b422dbe5a1685e"
+"@alitajs/layout@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.npm.taobao.org/@alitajs/layout/download/@alitajs/layout-2.6.2.tgz#6831ab0f85bc903643fa1a104353465ca39330b4"
+  integrity sha1-aDGrD4W8kDZD+hoQQ1NGXKOTMLQ=
   dependencies:
-    "@alitajs/alita-layout" "^2.3.0"
+    "@alitajs/alita-layout" "2.4.0-beta.1"
 
-"@alitajs/main-path@2.5.17-beta.3":
-  version "2.5.17-beta.3"
-  resolved "https://registry.yarnpkg.com/@alitajs/main-path/-/main-path-2.5.17-beta.3.tgz#e11af1461467ebaeea6a5936b83d259c3c36d4f0"
+"@alitajs/main-path@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.npm.taobao.org/@alitajs/main-path/download/@alitajs/main-path-2.6.2.tgz#e498b7c96ba741332214f119e688d56857f0ba2d"
+  integrity sha1-5Ji3yWunQTMiFPEZ5ojVaFfwui0=
   dependencies:
-    "@alitajs/utils" "2.5.17-beta.3"
+    "@alitajs/utils" "2.6.2"
 
-"@alitajs/micro@2.5.17-beta.3":
-  version "2.5.17-beta.3"
-  resolved "https://registry.yarnpkg.com/@alitajs/micro/-/micro-2.5.17-beta.3.tgz#b76c7f7e1af60be2ccbc95b050bd6f3fc359a673"
+"@alitajs/micro@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.npm.taobao.org/@alitajs/micro/download/@alitajs/micro-2.6.2.tgz#8d9c9618c81189d9b75a665468b9980a0371d8b8"
+  integrity sha1-jZyWGMgRidm3WmZUaLmYCgNx2Lg=
   dependencies:
     alita-micro "0.0.1-beta.6"
     archiver "^5.0.2"
     auto-skeleton-plugin "^0.0.0-beta.4"
 
-"@alitajs/native@2.5.17-beta.3":
-  version "2.5.17-beta.3"
-  resolved "https://registry.yarnpkg.com/@alitajs/native/-/native-2.5.17-beta.3.tgz#da102b1c275fbbbccc1fd8f08f82178a182be997"
+"@alitajs/native@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.npm.taobao.org/@alitajs/native/download/@alitajs/native-2.6.2.tgz#ace3a035a2ad879fa2504304e31d2b92d7a2bee5"
+  integrity sha1-rOOgNaKth5+iUEME4x0rkteivuU=
 
-"@alitajs/retain-log@2.5.17-beta.3":
-  version "2.5.17-beta.3"
-  resolved "https://registry.yarnpkg.com/@alitajs/retain-log/-/retain-log-2.5.17-beta.3.tgz#43681d62656d38358f2db934dfc1308add53f318"
-
-"@alitajs/router@2.5.17-beta.3":
-  version "2.5.17-beta.3"
-  resolved "https://registry.yarnpkg.com/@alitajs/router/-/router-2.5.17-beta.3.tgz#2c787a18e23e71f5df1b2bdd6c1260e13c6203fe"
-
-"@alitajs/routes@2.5.17-beta.3":
-  version "2.5.17-beta.3"
-  resolved "https://registry.yarnpkg.com/@alitajs/routes/-/routes-2.5.17-beta.3.tgz#ffb885519d7b162331a626a3d8d1c9c521f3829e"
-
-"@alitajs/tabs-layout@2.5.17-beta.3":
-  version "2.5.17-beta.3"
-  resolved "https://registry.yarnpkg.com/@alitajs/tabs-layout/-/tabs-layout-2.5.17-beta.3.tgz#4799f339d35fb204a83d9505b64c9ee2b90c26d1"
-
-"@alitajs/umi-presets-alita@2.5.17-beta.3":
-  version "2.5.17-beta.3"
-  resolved "https://registry.yarnpkg.com/@alitajs/umi-presets-alita/-/umi-presets-alita-2.5.17-beta.3.tgz#08fe8e95f60258a9a157da1ceeb2840deedcce6a"
+"@alitajs/plugin-layout@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.npm.taobao.org/@alitajs/plugin-layout/download/@alitajs/plugin-layout-2.6.2.tgz#054cebcdf68e3d0cf41f869acfbb7ce91dfdba1f"
+  integrity sha1-BUzrzfaOPQz0H4aaz7t86R39uh8=
   dependencies:
-    "@alitajs/cordova" "2.5.17-beta.3"
-    "@alitajs/generate" "2.5.17-beta.3"
-    "@alitajs/hd" "2.5.17-beta.3"
-    "@alitajs/keep-alive" "2.5.17-beta.3"
-    "@alitajs/layout" "2.5.17-beta.3"
-    "@alitajs/main-path" "2.5.17-beta.3"
-    "@alitajs/micro" "2.5.17-beta.3"
-    "@alitajs/native" "2.5.17-beta.3"
-    "@alitajs/retain-log" "2.5.17-beta.3"
-    "@alitajs/router" "2.5.17-beta.3"
-    "@alitajs/routes" "2.5.17-beta.3"
-    "@alitajs/tabs-layout" "2.5.17-beta.3"
-    "@umijs/plugin-access-layout" "^1.1.0"
+    "@umijs/route-utils" "^1.0.7"
+    antd "^4.1.2"
+    lodash "^4.17.15"
+    path-to-regexp "1.x"
+
+"@alitajs/retain-log@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.npm.taobao.org/@alitajs/retain-log/download/@alitajs/retain-log-2.6.2.tgz#23f550243cd55d133c5fec92d09940dd66832b00"
+  integrity sha1-I/VQJDzVXRM8X+yS0JlA3WaDKwA=
+
+"@alitajs/router@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.npm.taobao.org/@alitajs/router/download/@alitajs/router-2.6.2.tgz?cache=0&sync_timestamp=1605061721624&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40alitajs%2Frouter%2Fdownload%2F%40alitajs%2Frouter-2.6.2.tgz#e3ca4684ea2eb762b007dc17689ef3f4b3de15f0"
+  integrity sha1-48pGhOout2KwB9wXaJ7z9LPeFfA=
+
+"@alitajs/routes@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.npm.taobao.org/@alitajs/routes/download/@alitajs/routes-2.6.2.tgz?cache=0&sync_timestamp=1605061708688&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40alitajs%2Froutes%2Fdownload%2F%40alitajs%2Froutes-2.6.2.tgz#0262a051f29cc1f29fec8a785917a7853301e66a"
+  integrity sha1-AmKgUfKcwfKf7Ip4WRenhTMB5mo=
+
+"@alitajs/tabs-layout@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.npm.taobao.org/@alitajs/tabs-layout/download/@alitajs/tabs-layout-2.6.2.tgz#930022dea9c8f2fd6082b793cb3131284af7b95f"
+  integrity sha1-kwAi3qnI8v1ggreTyzExKEr3uV8=
+
+"@alitajs/umi-presets-alita@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.npm.taobao.org/@alitajs/umi-presets-alita/download/@alitajs/umi-presets-alita-2.6.2.tgz#6804227fd84c9cf3b5f58185f745cad720f3c269"
+  integrity sha1-aAQif9hMnPO19YGF90XK1yDzwmk=
+  dependencies:
+    "@alitajs/cordova" "2.6.2"
+    "@alitajs/generate" "2.6.2"
+    "@alitajs/hd" "2.6.2"
+    "@alitajs/keep-alive" "2.6.2"
+    "@alitajs/layout" "2.6.2"
+    "@alitajs/main-path" "2.6.2"
+    "@alitajs/micro" "2.6.2"
+    "@alitajs/native" "2.6.2"
+    "@alitajs/plugin-layout" "2.6.2"
+    "@alitajs/retain-log" "2.6.2"
+    "@alitajs/router" "2.6.2"
+    "@alitajs/routes" "2.6.2"
+    "@alitajs/tabs-layout" "2.6.2"
+    "@umijs/plugin-access" "2.3.2"
     "@umijs/plugin-antd" "0.8.0"
     "@umijs/plugin-dva" "0.8.2"
     "@umijs/plugin-esbuild" "1.0.1"
     "@umijs/plugin-helmet" "1.1.1"
+    "@umijs/plugin-initial-state" "2.2.1"
     "@umijs/plugin-locale" "0.10.1"
     "@umijs/plugin-model" "2.5.3"
     "@umijs/plugin-request" "2.5.0"
 
-"@alitajs/utils@2.5.17-beta.3":
-  version "2.5.17-beta.3"
-  resolved "https://registry.yarnpkg.com/@alitajs/utils/-/utils-2.5.17-beta.3.tgz#ca81a114192f2c7c842f202068aaf94304822231"
+"@alitajs/utils@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.npm.taobao.org/@alitajs/utils/download/@alitajs/utils-2.6.2.tgz#5df8648d45a21ab1769d2c026398e00fe9782ef6"
+  integrity sha1-XfhkjUWiGrF2nSwCY5jgD+l4LvY=
 
 "@ant-design/colors@^3.1.0":
   version "3.2.2"
@@ -140,7 +167,7 @@
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@ant-design/icons-svg/-/icons-svg-4.1.0.tgz#480b025f4b20ef7fe8f47d4a4846e4fee84ea06c"
 
-"@ant-design/icons@^4.0.0", "@ant-design/icons@^4.1.0", "@ant-design/icons@^4.2.1", "@ant-design/icons@^4.2.2":
+"@ant-design/icons@^4.1.0", "@ant-design/icons@^4.2.1", "@ant-design/icons@^4.2.2":
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/@ant-design/icons/-/icons-4.2.2.tgz#6533c5a02aec49238ec4748074845ad7d85a4f5e"
   dependencies:
@@ -201,43 +228,6 @@
     rmc-picker "^5.0.10"
     rmc-tooltip "^1.0.1"
     swiper "^6.2.0"
-
-"@ant-design/pro-layout@^6.0.0-4":
-  version "6.5.11"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-layout/-/pro-layout-6.5.11.tgz#dcdbd938e3ba86278926875885578544621f2bf5"
-  dependencies:
-    "@ant-design/icons" "^4.0.0"
-    "@ant-design/pro-provider" "1.1.0"
-    "@ant-design/pro-utils" "1.0.6"
-    "@umijs/route-utils" "^1.0.33"
-    classnames "^2.2.6"
-    history "^4.10.1"
-    memoize-one "^5.1.1"
-    omit.js "^2.0.2"
-    path-to-regexp "2.4.0"
-    qs "^6.9.0"
-    rc-resize-observer "^0.2.1"
-    react-copy-to-clipboard "^5.0.1"
-    react-responsive "^8.0.1"
-    react-router-dom "5.1.2"
-    unstated-next "^1.1.0"
-    use-json-comparison "^1.0.3"
-    use-media-antd-query "^1.0.3"
-    warning "^4.0.3"
-
-"@ant-design/pro-provider@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-provider/-/pro-provider-1.1.0.tgz#69b2440de2bacca59c6b6b1be43ab6c7fabc0121"
-  dependencies:
-    rc-util "^5.0.1"
-
-"@ant-design/pro-utils@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-utils/-/pro-utils-1.0.6.tgz#fcfc0cf3b90e584a7f3b4f0e2ea653673b7ca5de"
-  dependencies:
-    "@ant-design/pro-provider" "1.1.0"
-    fast-deep-equal "^3.1.3"
-    rc-util "^5.0.6"
 
 "@ant-design/react-slick@~0.27.0":
   version "0.27.11"
@@ -2318,12 +2308,10 @@
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@umijs/error-code-map/-/error-code-map-1.0.1.tgz#2a2dd7b4bcd11869e968264ff3dabacfabe8b874"
 
-"@umijs/plugin-access-layout@^1.1.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-access-layout/-/plugin-access-layout-1.2.0.tgz#8f92bec1982a31648f155437d29738004e9a5438"
-  dependencies:
-    "@ant-design/pro-layout" "^6.0.0-4"
-    "@umijs/route-utils" "^1.0.12"
+"@umijs/plugin-access@2.3.2":
+  version "2.3.2"
+  resolved "https://registry.npm.taobao.org/@umijs/plugin-access/download/@umijs/plugin-access-2.3.2.tgz?cache=0&sync_timestamp=1604490352027&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fplugin-access%2Fdownload%2F%40umijs%2Fplugin-access-2.3.2.tgz#2d736e72bf27c69c7a0d1d1d1ac334a408e069c0"
+  integrity sha1-LXNucr8nxpx6DR0dGsM0pAjgacA=
 
 "@umijs/plugin-antd@0.8.0":
   version "0.8.0"
@@ -2353,6 +2341,11 @@
   dependencies:
     "@types/react-helmet" "^6.1.0"
     react-helmet "^6.1.0"
+
+"@umijs/plugin-initial-state@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.npm.taobao.org/@umijs/plugin-initial-state/download/@umijs/plugin-initial-state-2.2.1.tgz#cd7592aa90b6b369bd0df297254320088397ff67"
+  integrity sha1-zXWSqpC2s2m9DfKXJUMgCIOX/2c=
 
 "@umijs/plugin-locale@0.10.1":
   version "0.10.1"
@@ -2436,9 +2429,10 @@
     react-dom "^16.13.1"
     react-router-config "5.1.1"
 
-"@umijs/route-utils@^1.0.12", "@umijs/route-utils@^1.0.33":
+"@umijs/route-utils@^1.0.7":
   version "1.0.34"
-  resolved "https://registry.yarnpkg.com/@umijs/route-utils/-/route-utils-1.0.34.tgz#663d020669217dd7e8431a1b9ce9abea5fbbb6b8"
+  resolved "https://registry.npm.taobao.org/@umijs/route-utils/download/@umijs/route-utils-1.0.34.tgz?cache=0&sync_timestamp=1602588525501&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Froute-utils%2Fdownload%2F%40umijs%2Froute-utils-1.0.34.tgz#663d020669217dd7e8431a1b9ce9abea5fbbb6b8"
+  integrity sha1-Zj0CBmkhfdfoQxobnOmr6l+7trg=
   dependencies:
     "@qixian.cs/path-to-regexp" "^6.1.0"
     hash.js "^1.1.7"
@@ -2798,11 +2792,12 @@ alita-micro@0.0.1-beta.6:
   dependencies:
     father-build "^1.18.5"
 
-alita@^2.5.17-beta.3:
-  version "2.5.17-beta.3"
-  resolved "https://registry.yarnpkg.com/alita/-/alita-2.5.17-beta.3.tgz#e0f3bba6b72585eb97378ec04533898925dda74f"
+alita@2.6.2:
+  version "2.6.2"
+  resolved "https://registry.npm.taobao.org/alita/download/alita-2.6.2.tgz#091b193779afafcd21cb864b63b3b47dcf5a420d"
+  integrity sha1-CRsZN3mvr80hy4ZLY7O0fc9aQg0=
   dependencies:
-    "@alitajs/umi-presets-alita" "2.5.17-beta.3"
+    "@alitajs/umi-presets-alita" "2.6.2"
     umi "3.2.20"
 
 alphanum-sort@^1.0.0:
@@ -2926,6 +2921,58 @@ antd-mobile@^2.2.14, antd-mobile@^2.3.1:
     rmc-steps "~1.0.0"
     rmc-tabs "~1.2.0"
     rmc-tooltip "~1.0.0"
+
+antd@^4.1.2:
+  version "4.8.2"
+  resolved "https://registry.npm.taobao.org/antd/download/antd-4.8.2.tgz?cache=0&sync_timestamp=1604915370174&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fantd%2Fdownload%2Fantd-4.8.2.tgz#8cad882ddb5b18bafacd009cb0096f5b20c8a2f3"
+  integrity sha1-jK2ILdtbGLr6zQCcsAlvWyDIovM=
+  dependencies:
+    "@ant-design/colors" "^4.0.5"
+    "@ant-design/css-animation" "^1.7.2"
+    "@ant-design/icons" "^4.2.1"
+    "@ant-design/react-slick" "~0.27.0"
+    "@babel/runtime" "^7.11.2"
+    array-tree-filter "^2.1.0"
+    classnames "^2.2.6"
+    copy-to-clipboard "^3.2.0"
+    lodash "^4.17.20"
+    moment "^2.25.3"
+    omit.js "^2.0.2"
+    raf "^3.4.1"
+    rc-animate "~3.1.0"
+    rc-cascader "~1.4.0"
+    rc-checkbox "~2.3.0"
+    rc-collapse "~2.0.0"
+    rc-dialog "~8.4.0"
+    rc-drawer "~4.1.0"
+    rc-dropdown "~3.2.0"
+    rc-field-form "~1.13.0"
+    rc-image "~4.0.0"
+    rc-input-number "~6.1.0"
+    rc-mentions "~1.5.0"
+    rc-menu "~8.8.2"
+    rc-motion "^2.2.0"
+    rc-notification "~4.5.2"
+    rc-pagination "~3.1.0"
+    rc-picker "~2.3.0"
+    rc-progress "~3.1.0"
+    rc-rate "~2.9.0"
+    rc-resize-observer "^0.2.3"
+    rc-select "~11.4.0"
+    rc-slider "~9.6.1"
+    rc-steps "~4.1.0"
+    rc-switch "~3.2.0"
+    rc-table "~7.11.0"
+    rc-tabs "~11.7.0"
+    rc-textarea "~0.3.0"
+    rc-tooltip "~5.0.0"
+    rc-tree "~3.11.0"
+    rc-tree-select "~4.1.1"
+    rc-trigger "~5.0.3"
+    rc-upload "~3.3.1"
+    rc-util "^5.1.0"
+    scroll-into-view-if-needed "^2.2.25"
+    warning "^4.0.3"
 
 antd@^4.1.3:
   version "4.8.0"
@@ -4187,7 +4234,7 @@ copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
 
-copy-to-clipboard@^3, copy-to-clipboard@^3.2.0:
+copy-to-clipboard@^3.2.0:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/copy-to-clipboard/-/copy-to-clipboard-3.3.1.tgz#115aa1a9998ffab6196f93076ad6da3b913662ae"
   dependencies:
@@ -4447,10 +4494,6 @@ css-loader@3.6.0:
     postcss-value-parser "^4.1.0"
     schema-utils "^2.7.0"
     semver "^6.3.0"
-
-css-mediaquery@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/css-mediaquery/-/css-mediaquery-0.1.2.tgz#6a2c37344928618631c54bd33cedd301da18bea0"
 
 css-modules-loader-core@^1.1.0:
   version "1.1.0"
@@ -5401,7 +5444,7 @@ fast-deep-equal@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-2.0.1.tgz#7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49"
 
-fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
+fast-deep-equal@^3.1.1:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
 
@@ -6079,7 +6122,7 @@ history-with-query@4.10.3:
     tiny-warning "^1.0.0"
     value-equal "^1.0.1"
 
-history@^4.10.1, history@^4.7.2, history@^4.9.0:
+history@^4.7.2, history@^4.9.0:
   version "4.10.1"
   resolved "https://registry.yarnpkg.com/history/-/history-4.10.1.tgz#33371a65e3a83b267434e2b3f3b1b4c58aad4cf3"
   dependencies:
@@ -6236,10 +6279,6 @@ https-browserify@^1.0.0:
 human-signals@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
-
-hyphenate-style-name@^1.0.0:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.4.tgz#691879af8e220aea5750e8827db4ef62a54e361d"
 
 iconv-lite@0.4.24:
   version "0.4.24"
@@ -7357,12 +7396,6 @@ marked@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/marked/-/marked-1.1.1.tgz#e5d61b69842210d5df57b05856e0c91572703e6a"
 
-matchmediaquery@^0.3.0:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/matchmediaquery/-/matchmediaquery-0.3.1.tgz#8247edc47e499ebb7c58f62a9ff9ccf5b815c6d7"
-  dependencies:
-    css-mediaquery "^0.1.2"
-
 md5.js@^1.3.4:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/md5.js/-/md5.js-1.3.5.tgz#b5d07b8e3216e3e27cd728d72f70d1e6a342005f"
@@ -7531,13 +7564,6 @@ min-document@^2.19.0:
   resolved "https://registry.yarnpkg.com/min-document/-/min-document-2.19.0.tgz#7bd282e3f5842ed295bb748cdd9f1ffa2c824685"
   dependencies:
     dom-walk "^0.1.0"
-
-mini-create-react-context@^0.3.0:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/mini-create-react-context/-/mini-create-react-context-0.3.3.tgz#b1b2bc6604d3a6c5d9752bad7692615410ebb38e"
-  dependencies:
-    "@babel/runtime" "^7.12.1"
-    tiny-warning "^1.0.3"
 
 mini-create-react-context@^0.4.0:
   version "0.4.1"
@@ -8242,19 +8268,15 @@ path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
 
-path-to-regexp@2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-2.2.1.tgz#90b617025a16381a879bc82a38d4e8bdeb2bcf45"
-
-path-to-regexp@2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-2.4.0.tgz#35ce7f333d5616f1c1e1bfe266c3aba2e5b2e704"
-
-path-to-regexp@^1.7.0:
+path-to-regexp@1.x, path-to-regexp@^1.7.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-1.8.0.tgz#887b3ba9d84393e87a0a0b9f4cb756198b53548a"
   dependencies:
     isarray "0.0.1"
+
+path-to-regexp@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-2.2.1.tgz#90b617025a16381a879bc82a38d4e8bdeb2bcf45"
 
 path-type@^3.0.0:
   version "3.0.0"
@@ -9069,7 +9091,7 @@ promise@~7.0.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@15.x, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@15.x, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   dependencies:
@@ -9149,7 +9171,7 @@ qs@6.7.0:
   version "6.7.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
 
-qs@^6.9.0, qs@^6.9.1:
+qs@^6.9.1:
   version "6.9.4"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.9.4.tgz#9090b290d1f91728d3c22e54843ca44aea5ab687"
 
@@ -9669,13 +9691,6 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-copy-to-clipboard@^5.0.1:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/react-copy-to-clipboard/-/react-copy-to-clipboard-5.0.2.tgz#d82a437e081e68dfca3761fbd57dbf2abdda1316"
-  dependencies:
-    copy-to-clipboard "^3"
-    prop-types "^15.5.8"
-
 react-document-title@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/react-document-title/-/react-document-title-2.0.3.tgz#bbf922a0d71412fc948245e4283b2412df70f2b9"
@@ -9762,32 +9777,11 @@ react-redux@^7.1.0:
     prop-types "^15.7.2"
     react-is "^16.13.1"
 
-react-responsive@^8.0.1:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/react-responsive/-/react-responsive-8.1.0.tgz#afcc2293c46a37b1e7926ff7fef66bcb147e7cba"
-  dependencies:
-    hyphenate-style-name "^1.0.0"
-    matchmediaquery "^0.3.0"
-    prop-types "^15.6.1"
-    shallow-equal "^1.1.0"
-
 react-router-config@5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/react-router-config/-/react-router-config-5.1.1.tgz#0f4263d1a80c6b2dc7b9c1902c9526478194a988"
   dependencies:
     "@babel/runtime" "^7.1.2"
-
-react-router-dom@5.1.2:
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-5.1.2.tgz#06701b834352f44d37fbb6311f870f84c76b9c18"
-  dependencies:
-    "@babel/runtime" "^7.1.2"
-    history "^4.9.0"
-    loose-envify "^1.3.1"
-    prop-types "^15.6.2"
-    react-router "5.1.2"
-    tiny-invariant "^1.0.2"
-    tiny-warning "^1.0.0"
 
 react-router-dom@5.2.0, react-router-dom@^5.1.2:
   version "5.2.0"
@@ -9798,21 +9792,6 @@ react-router-dom@5.2.0, react-router-dom@^5.1.2:
     loose-envify "^1.3.1"
     prop-types "^15.6.2"
     react-router "5.2.0"
-    tiny-invariant "^1.0.2"
-    tiny-warning "^1.0.0"
-
-react-router@5.1.2:
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/react-router/-/react-router-5.1.2.tgz#6ea51d789cb36a6be1ba5f7c0d48dd9e817d3418"
-  dependencies:
-    "@babel/runtime" "^7.1.2"
-    history "^4.9.0"
-    hoist-non-react-statics "^3.1.0"
-    loose-envify "^1.3.1"
-    mini-create-react-context "^0.3.0"
-    path-to-regexp "^1.7.0"
-    prop-types "^15.6.2"
-    react-is "^16.6.0"
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
@@ -10716,7 +10695,7 @@ shallow-clone@^0.1.2:
     lazy-cache "^0.2.3"
     mixin-object "^2.0.1"
 
-shallow-equal@^1.1.0, shallow-equal@^1.2.1:
+shallow-equal@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/shallow-equal/-/shallow-equal-1.2.1.tgz#4c16abfa56043aa20d050324efa68940b0da79da"
 
@@ -11736,10 +11715,6 @@ unset-value@^1.0.0:
     has-value "^0.3.1"
     isobject "^3.0.0"
 
-unstated-next@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/unstated-next/-/unstated-next-1.1.0.tgz#7bb4911a12fdf3cc8ad3eb11a0b315e4a8685ea8"
-
 upath@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/upath/-/upath-1.2.0.tgz#8f66dbcd55a883acdae4408af8b035a5044c1894"
@@ -11809,16 +11784,6 @@ url@^0.11.0:
   dependencies:
     punycode "1.3.2"
     querystring "0.2.0"
-
-use-json-comparison@^1.0.3:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/use-json-comparison/-/use-json-comparison-1.0.5.tgz#d41a72d65fcf4cf72acc85c8f3980e2173809d63"
-
-use-media-antd-query@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/use-media-antd-query/-/use-media-antd-query-1.0.3.tgz#d9b86f4caf53056a33dc20145b7d376d88c5e50d"
-  dependencies:
-    react-responsive "^8.0.1"
 
 use-subscription@1.4.1:
   version "1.4.1"
