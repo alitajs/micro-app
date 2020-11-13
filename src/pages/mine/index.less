@@ -1,0 +1,80 @@
+.container{
+    background-color :#F5F5F5;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    
+}
+.containerConter{
+    width: 100%;
+    overflow-y: scroll;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headerInfo{
+    height: 180px;
+    width: 100%;
+    background-color: #108ee9;
+    display: flex;
+    justify-content: start;
+    
+    .amd-avatar{
+        width: 88%;
+        margin-left: 3%;
+        img{
+            border-radius: .2rem !important;          
+        }
+        h3{
+            color: white !important;
+            font-size: 0.4rem !important;
+            p{
+                color:#ddd !important;
+                font-size: 0.25rem !important;
+            }
+        }
+    }
+    >p{
+        font-size: .5rem;
+        color: white;
+        height: 100%;
+        padding-top: 55px;
+        display: flex;
+
+        justify-self: center;
+    }
+}
+.listOption{
+    width: 95%;
+    
+    .listStyle{
+        margin-bottom: .15rem !important;
+        border-radius: .1rem;
+        overflow: hidden;
+        
+        &:nth-child(1){
+            margin-top: .15rem;
+        }
+    }
+    .amd-list-body{
+        width: 100%;
+        background-color: white;
+    }  
+    .amd-list{
+        display: flex;
+        justify-content: center;
+        .amd-list-item{
+            border-bottom: 1px solid #ddd;
+            padding-left: 0 !important;
+            margin-left: 0.24rem;
+        }
+        &:last-child{
+            .amd-list-item{
+                border-bottom: none;
+                padding-left: 0 !important;
+                margin-left: 0.24rem;
+            }
+        }
+    }
+}

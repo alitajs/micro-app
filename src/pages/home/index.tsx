@@ -206,10 +206,10 @@ export default () => {
                 </div>
                 <div className="headerCard">
                     {cardListData.map((value) =>(
-                            <div key={Math.random()}>
-                                <img src={value.src} width={60} />
-                                <span>{value.describe}</span>
-                            </div>
+                        <div key={Math.random()}>
+                            <img src={value.src} width={60} />
+                            <span>{value.describe}</span>
+                        </div>
                     ))}			
                 </div>
                 <div className="contentCard">
