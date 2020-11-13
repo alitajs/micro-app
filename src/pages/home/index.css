@@ -1,14 +1,16 @@
-#root {
-  background-color: #F5F5F5 !important;
-}
-#root > div {
-  min-height: 0vh !important;
-}
 body {
   height: 100vh !important;
 }
 .container {
   background-color: #F5F5F5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.containerContent {
+  flex: 1;
+  width: 100%;
+  overflow-y: scroll;
 }
 .header {
   display: flex;
@@ -23,7 +25,18 @@ body {
   color: white;
   text-align: center;
 }
-.header_card {
+.header .amd-search-input {
+  flex: none !important;
+}
+.header .amd-search {
+  padding-left: 0.1rem !important;
+  padding-right: 0.1rem !important;
+  width: 70% !important;
+}
+.header .amd-search-cancel {
+  display: none !important;
+}
+.headerCard {
   background-color: #108ee9;
   height: 140px;
   font-size: 22px;
@@ -32,20 +45,20 @@ body {
   flex-direction: row;
   justify-content: space-around;
 }
-.header_card div {
+.headerCard div {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
-.header_card div img {
+.headerCard div img {
   display: flex;
   justify-self: center ;
   align-self: center;
   margin-bottom: 0.1rem;
 }
-.content_card {
+.contentCard {
   height: 300px;
   font-size: 18px;
   color: black;
@@ -54,23 +67,23 @@ body {
   flex-wrap: wrap;
   margin-top: 0.2rem;
 }
-.content_card div {
+.contentCard div {
   width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
-.content_card div img {
+.contentCard div img {
   display: flex;
   justify-self: center ;
   align-self: center;
   margin-bottom: 0.1rem;
 }
-.content_card div span {
+.contentCard div span {
   margin-bottom: 0.2rem;
 }
-.content_list {
+.contentList {
   height: 550px;
   display: flex;
   justify-content: center;
@@ -81,24 +94,48 @@ body {
   margin-top: 0.5rem;
   width: 100%;
 }
-.recent_new {
+.swiper .swiperP {
+  height: 100%;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+}
+.swiper .aSwiper {
+  height: 100px;
+}
+.swiper .swiper-container {
+  border-radius: 0.1rem !important;
+  width: 95% !important;
+}
+.recentNew {
   width: 100%;
   height: 50px;
   margin-bottom: 25px;
 }
-.recent_new li {
+.recentNew li {
   margin-left: 25px;
   font-size: 20px !important;
   margin-bottom: 8px;
 }
-.recent_new .recent_new_info {
+.recentNew .recentNewInfo {
   color: black;
 }
-.recent_new .recent_new_time {
+.recentNew .recentNewTime {
   margin-left: 0.6rem;
   color: #ddd;
 }
-.easy_pay {
+.recentNew .amd-list {
+  height: 110px;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+.recentNew .amd-list-body {
+  border-radius: 0.1rem !important;
+  width: 95% !important;
+  background-color: white;
+}
+.easyPay {
   width: 95%;
   height: 200px;
   margin-left: 2.5%;
@@ -107,79 +144,44 @@ body {
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
 }
-.easy_pay .easy_pay_header {
+.easyPay .easyPayHeader {
   font-size: 1.3em;
   margin: 12px;
   border-bottom: 1px solid #ddd;
   padding-left: 0.2rem;
 }
-.easy_pay .easy_pay_content {
+.easyPay .easyPayContent {
   width: 100%;
   height: 100px;
   display: flex;
   flex-direction: row;
   margin: 12px;
 }
-.easy_pay .easy_pay_content div {
+.easyPay .easyPayContent div {
   height: 70px;
   width: 50%;
   padding-left: 0.2rem;
 }
-.easy_pay .easy_pay_content div:nth-child(1) {
+.easyPay .easyPayContent div:nth-child(1) {
   border-right: 1px solid #ddd;
 }
 .footer {
   position: fixed;
   height: 100%;
   width: 100%;
-  top: 0 ;
+  top: 0;
 }
-.amd-search-input {
-  flex: none !important;
-}
-.amd-search {
-  padding-left: 0.1rem !important;
-  padding-right: 0.1rem !important;
-  width: 70% !important;
-}
-.amd-search-cancel {
-  display: none !important;
-}
-.swiper-p {
-  height: 100%;
-  margin: 0;
-  color: #fff;
-  text-align: center;
-}
-.a-swiper {
-  height: 100px;
-}
-.swiper-container {
-  border-radius: 0.1rem !important;
-  width: 95% !important;
-}
-.amd-list {
-  height: 110px;
-  padding: 0 !important;
-  display: flex !important;
-  justify-content: center !important;
-}
-.amd-list-body {
-  border-radius: 0.1rem !important;
-  width: 95% !important;
-  background-color: white;
-}
-.amd-tabbar-list {
-  background-color: white;
-}
-.demo-tabbar-wrap {
+.footer .demoTabbarWrap {
   width: 100vw;
   height: 100vh;
 }
-.demo-tabbar-2 {
+.footer .demoTabbar {
   width: 100%;
   height: 100%;
 }
-.demo-tabbar-2 .active-tab .amd-tabbar-item-title {
+.footer .demoTabbar .activeTab .amd-tabbar-item-title {
   color: #515151;
+}
+.footer .amd-tabbar-list {
+  background-color: white;
 }

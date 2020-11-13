@@ -45,7 +45,7 @@ const openMicroByQrCode = async (data: MicroAppProps) => {
     return;
   }
   if (data.type === 'dev') {
-    await window.alita.device.openWeb(data.url || '');
+    await window.alita.device.openMicroApp({ appURL: data.url, userData: data.initData });
     return;
   }
   await window.alita.device.openMicroApp({ app: data.app!, userData: data.initData });

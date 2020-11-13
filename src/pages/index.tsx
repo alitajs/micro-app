@@ -30,13 +30,18 @@ const Page: FC<PageProps> = () => {
     </Item>
     <Item onPress={async () => {
       try {
-        await window.alita.device.scanCode({ onlyFromCamera: false });
+        const res = await window.alita.device.scanCode({ onlyFromCamera: false });
+        Modal.alert({
+          title: '扫码解析',
+          content:
+            JSON.stringify(res),
+        })
       } catch (error) {
-Modal.alert({
-        title: '扫码解析',
-        content:
-          JSON.stringify(error),
-      })
+        Modal.alert({
+          title: '扫码解析错误',
+          content:
+            JSON.stringify(error),
+        })
       }
       // Modal.alert({
       //   title: '扫码解析',

@@ -3,42 +3,164 @@ import {
 	unstable_Popover as Popover,
 	unstable_SearchBar as SearchBar,
 	unstable_Swiper as Swiper,
-	unstable_TabBar as TabBar,
 	unstable_List as List,
 } from '@ant-design/mobile'
-import '@/pages/home/index.css'
+import '@/pages/home/index.less'
 
-import HeaderMore from '@/assets/Alipaydemo/add.png'
-import ScanCard from '@/assets/Alipaydemo/scan.png'
-import PayCard from '@/assets/Alipaydemo/pay.png'
-import NavigationCard from '@/assets/Alipaydemo/navigation.png'
-import BagCard from '@/assets/Alipaydemo/bag.png'
-import ElementCard from '@/assets/Alipaydemo/element.png'
-import AllCard from '@/assets/Alipaydemo/all.png'
-import AlipayCard from '@/assets/Alipaydemo/alipay.png'
-import MounthCard from '@/assets/Alipaydemo/mouth.png'
-import ZhuCard from '@/assets/Alipaydemo/feizhu.png'
-import MovieCard from '@/assets/Alipaydemo/movie.png'
+import HeaderMore from '@/assets/alipayIcon/add.png'
+import ScanCard from '@/assets/alipayIcon/scan.png'
+import PayCard from '@/assets/alipayIcon/pay.png'
+import NavigationCard from '@/assets/alipayIcon/navigation.png'
+import BagCard from '@/assets/alipayIcon/bag.png'
+import ElementCard from '@/assets/alipayIcon/element.png'
+import AllCard from '@/assets/alipayIcon/all.png'
+import MounthCard from '@/assets/alipayIcon/mouth.png'
+import ZhuCard from '@/assets/alipayIcon/feizhu.png'
+import MovieCard from '@/assets/alipayIcon/movie.png'
 
 import {
 	ScanCode,
 	Help,
 	Qr,
-	Gift,
-	KoubeiFill,
-	MoneyCircle,
-	Chat,
-    Person,
-    Alipay
+    Gift,
+    Location
 } from '@ant-design/mobile-icons'
 const PopoverItem = Popover.Item
 const { SwiperItem } = Swiper
 const { Item } = List
-const TabBarItem = TabBar.Item
 
 export default () => {
 	const [visible, setVisible] = React.useState(false)
-    const [activeTab,setActiveTab] = React.useState("alipay")
+    const cardListData = [
+      {
+        src:ScanCard,
+        describe:"扫一扫"
+      },
+      {
+        src:PayCard,
+        describe:"付钱/收款"
+      },
+      {
+        src:NavigationCard,
+        describe:"出行"
+      },
+      {
+        src:BagCard,
+        describe:"卡包"
+      }
+    ];
+    const swiperItemData = [
+      {
+        background:"red",
+        content:"1"
+      },
+      {
+        background:"blue",
+        content:"2"
+      },
+      {
+        background:"green",
+        content:"3"
+      },
+      {
+        background:"#ccc",
+        content:"4"
+      }
+    ];
+    const labelListData = [
+      {
+        src:ElementCard,
+        describe:"饿了么"
+      },
+      {
+        src:MounthCard,
+        describe:"口碑"
+      },
+      {
+        src:ZhuCard,
+        describe:"飞猪酒店"
+      },
+      {
+        src:MovieCard,
+        describe:"电影演出"
+      },
+      {
+        src:ElementCard,
+        describe:"饿了么"
+      },
+      {
+        src:ElementCard,
+        describe:"饿了么"
+      },
+      {
+        src:ElementCard,
+        describe:"饿了么"
+      },
+      {
+        src:ElementCard,
+        describe:"饿了么"
+      },
+      {
+        src:ElementCard,
+        describe:"饿了么"
+      },
+      {
+        src:ElementCard,
+        describe:"饿了么"
+      },
+      {
+        src:ElementCard,
+        describe:"饿了么"
+      },
+      {
+        src:ElementCard,
+        describe:"饿了么"
+      },
+      {
+        src:ElementCard,
+        describe:"饿了么"
+      },
+      {
+        src:ElementCard,
+        describe:"饿了么"
+      },
+      {
+        src:AllCard,
+        describe:"全部"
+      }
+    ];
+    const popoverItemData = [
+      {
+        value:"scan",
+        icon:ScanCode,
+        content:"扫一扫",
+        badge:""
+      },
+      {
+        value:"collection",
+        icon:Qr,
+        content:"收款",
+        badge:"true"
+      },
+      {
+        value:"car",
+        icon:ScanCode,
+        content:"收款",
+        badge:""
+      },
+      {
+        value:"assistant",
+        icon:Gift,
+        content:"智能助理",
+        badge:""
+      },
+      {
+        value:"life",
+        icon:Location,
+        content:"会生活",
+        badge:""
+      },
+    ]
 	const handleVisibleChange = (visible: boolean) => {
         console.log(visible);    
 		setVisible(visible)
@@ -50,207 +172,103 @@ export default () => {
     
 	return (
 		<div className="container" >
-			<div className="header">
-				<div className="weather">福州<br/>多云</div>
-				<SearchBar
-					placeholder="双十一全场五折起"
-					showCancelButton
-					borderColor="green"
-					maxLength={24}
-				/>
-				<Popover
-					mask
-					visible={visible}
-					overlay={[
-						<PopoverItem
-							key="scan"
-							value="scan"
-							icon={ScanCode}
-							data-seed="logId"
-						>
-							扫一扫
-						</PopoverItem>,
-						<PopoverItem
-							key="special"
-							value="special"
-							badge={{ dot: true }}
-							icon={Qr}
-						>
-							收款
-						</PopoverItem>,
-						<PopoverItem key="car" value="car" icon={Help}>
-							乘车码
-						</PopoverItem>,
-						<PopoverItem
-							key="assistant"
-							value="assistant"
-							badge={{ text: 123 }}
-							icon={Gift}
-						>
-							智能助理
-						</PopoverItem>,
-						<PopoverItem key="life" value="life" icon={Help}>
-							会生活
-						</PopoverItem>,
-					]}
-					align={{
-						overflow: { adjustY: 0, adjustX: 0 },
-						offset: [-10, 0],
-					}}
-					onVisibleChange={(visible) => handleVisibleChange(visible)}
-					onSelect={(opt) => select(opt)}
-				>				
-					<img src={HeaderMore} width={50}/>				
-				</Popover>
-			</div>
-			<div className="header_card">
-				<div>
-					<img src={ScanCard} width={60} />
-					<span>扫一扫</span>
-				</div>
-				<div>
-					<img src={PayCard} width={60} />
-					付钱/收款
-				</div>
-				<div>
-					<img src={NavigationCard} width={60} />
-					出行
-				</div>
-				<div>
-					<img src={BagCard} width={60} />
-					卡包
-				</div>
-			</div>
-			<div className="content_card">
-				<div>
-					<img src={ElementCard} width={55} />
-					<span>饿了么</span>
-				</div>
-				<div>
-					<img src={MounthCard} width={55} />
-					<span>口碑</span>
-				</div>
-				<div>
-					<img src={ZhuCard} width={55} />
-					<span>飞猪酒店</span>
-				</div>
-				<div>
-					<img src={MovieCard} width={55} />
-					<span>电影演出</span>
-				</div>
-				<div>
-					<img src={ElementCard} width={55} />
-					<span>饿了么</span>
-				</div>
-				<div>
-					<img src={ElementCard} width={55} />
-					<span>饿了么</span>
-				</div>
-				<div>
-					<img src={ElementCard} width={55} />
-					<span>饿了么</span>
-				</div>
-				<div>
-					<img src={ElementCard} width={55} />
-					<span>饿了么</span>
-				</div>
-				<div>
-					<img src={ElementCard} width={55} />
-					<span>饿了么</span>
-				</div>
-				<div>
-					<img src={ElementCard} width={55} />
-					<span>饿了么</span>
-				</div>
-				<div>
-					<img src={ElementCard} width={55} />
-					<span>饿了么</span>
-				</div>
-				<div>
-					<img src={ElementCard} width={55} />
-					<span>饿了么</span>
-				</div>
-				<div>
-					<img src={ElementCard} width={55} />
-					<span>饿了么</span>
-				</div>
-				<div>
-					<img src={AllCard} width={55} />
-					<span>全部</span>
-				</div>
-			</div>
-			<div className="content_list">
-				<div className="recent_new">
-					<List radius={true}>
-						<Item onPress={() => null}>
-							<ul>
-								<li>
-									<span className="recent_new_info">
-										付款成功 ¥100
-									</span>
-									<span className="recent_new_time">
-										3小时前
-									</span>
-								</li>
-								<li>
-									<span className="recent_new_info">
-										你有一张券即将到期
-									</span>
-									<span className="recent_new_time">
-										5小时前
-									</span>
-								</li>
-							</ul>
-						</Item>
-					</List>
-				</div>
-				<div className="swiper">
-					<Swiper
-						className="a-swiper"
-						key={Math.random()}
-						indicator={true}
-						loop={true}
-						autoplay={true}
-					>
-						<SwiperItem>
-							<p
-								className="swiper-p"
-								style={{ background: 'red' }}
-							>
-								1
-							</p>
-						</SwiperItem>
-						<SwiperItem>
-							<p
-								className="swiper-p"
-								style={{ background: 'blue' }}
-							>
-								2
-							</p>
-						</SwiperItem>
-						<SwiperItem>
-							<p
-								className="swiper-p"
-								style={{ background: 'green' }}
-							>
-								3
-							</p>
-						</SwiperItem>
-						<SwiperItem>
-							<p
-								className="swiper-p"
-								style={{ background: '#ccc' }}
-							>
-								4
-							</p>
-						</SwiperItem>
-					</Swiper>
-				</div>
-				<div className="easy_pay">
-					<div className="easy_pay_header">
+            <div className="containerContent">
+                <div className="header">
+                    <div className="weather">福州<br/>多云</div>
+                    <SearchBar
+                        placeholder="双十一全场五折起"
+                        showCancelButton
+                        borderColor="green"
+                        maxLength={24}
+                    />
+                    <Popover
+                        mask
+                        visible={visible}
+                        overlay={[
+                            popoverItemData.map((value)=>(
+                                <PopoverItem
+                                    key={Math.random()}
+                                    value={value.value}
+                                    icon={value.icon}>
+                                        {value.content}
+                                </PopoverItem>
+                            ))
+                        ]}
+                        align={{
+                            overflow: { adjustY: 0, adjustX: 0 },
+                            offset: [-10, 0],
+                        }}
+                        onVisibleChange={(visible) => handleVisibleChange(visible)}
+                        onSelect={(opt) => select(opt)}
+                    >				
+                        <img src={HeaderMore} width={50}/>				
+                    </Popover>
+                </div>
+                <div className="headerCard">
+                    {cardListData.map((value) =>(
+                            <div key={Math.random()}>
+                                <img src={value.src} width={60} />
+                                <span>{value.describe}</span>
+                            </div>
+                    ))}			
+                </div>
+                <div className="contentCard">
+                    {labelListData.map((value)=>(
+                        <div key={Math.random()}>
+                            <img src={value.src} width={55} />
+                            <span>{value.describe}</span>
+                        </div>
+                    ))}
+                </div>
+                <div className="contentList">
+                    <div className="recentNew">
+                        <List radius={true}>
+                            <Item onPress={() => null}>
+                                <ul>
+                                    <li>
+                                        <span className="recentNewInfo">
+                                            付款成功 ¥100
+                                        </span>
+                                        <span className="recentNewTime">
+                                            3小时前
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span className="recentNewInfo">
+                                            你有一张券即将到期
+                                        </span>
+                                        <span className="recentNewTime">
+                                            5小时前
+                                        </span>
+                                    </li>
+                                </ul>
+                            </Item>
+                        </List>
+                    </div>
+                    <div className="swiper">
+                        <Swiper
+                            className="aSwiper"				
+                            indicator={true}
+                            loop={true}
+                            autoplay={true}
+                        >   
+                            {swiperItemData.map((value)=>(
+                                <SwiperItem key={Math.random()}>
+                                    <p
+                                        className="swiperP"
+                                        style={{ background: value.background }}
+                                    >
+                                        {value.content}
+                                    </p>
+                                </SwiperItem>
+                            ))}
+                        </Swiper>
+                    </div>
+                    <div className="easyPay">
+					<div className="easyPayHeader">
 						<b>惠支付</b>
 					</div>
-					<div className="easy_pay_content">
+					<div className="easyPayContent">
 						<div>
 							<b>天天抽奖</b>
 							<br />
@@ -264,76 +282,7 @@ export default () => {
 						</div>
 					</div>
 				</div>
-			</div>
-            <div className="footer" >
-                <div className="demo-tabbar-wrap">
-                    <div className="demo-tabbar-2">
-                        <TabBar>
-                            <TabBarItem
-                                activeClassName="active-tab"
-                                key="alipay"
-                                value="alipay"
-                                icon={Alipay}
-                                activeIcon={Alipay}
-                                title="首页"
-                                onPress={() => {
-                                    setActiveTab('alipay')
-                                 }}
-                                active={activeTab === 'alipay'}
-                                
-                            ></TabBarItem>
-                            <TabBarItem
-                                activeClassName="active-tab"
-                                key="money"
-                                value="money"
-                                icon={MoneyCircle}
-                                activeIcon={MoneyCircle}
-                                title="理财"
-                                onPress={() => {
-                                    setActiveTab('money')
-                                 }}
-                                active={activeTab === 'money'}
-                                
-                            ></TabBarItem>
-                            <TabBarItem
-                                activeClassName="active-tab"
-                                key="mouth"
-                                value="mouth"
-                                icon={KoubeiFill}
-                                activeIcon={KoubeiFill}
-                                title="口碑"
-                                onPress={() => {
-                                    setActiveTab('mouth')
-                                 }}
-                                active={activeTab === 'mouth'}
-                            ></TabBarItem>
-                            <TabBarItem
-                                activeClassName="active-tab"
-                                key="info"
-                                value="info"
-                                icon={Chat}
-                                activeIcon={Chat}
-                                title="消息"
-                                onPress={() => {
-                                    setActiveTab('info')
-                                 }}
-                                active={activeTab === 'info'}
-                            ></TabBarItem>
-                            <TabBarItem
-                                activeClassName="active-tab"
-                                key="mine"
-                                value="mine"
-                                icon={Person}
-                                activeIcon={Person}
-                                title="我的"
-                                onPress={() => {
-                                    setActiveTab('mine')
-                                 }}
-                                active={activeTab === 'mine'}
-                            ></TabBarItem>
-                        </TabBar>
-                    </div>
-                </div>
+			    </div>
             </div>
 		</div>
 	)
