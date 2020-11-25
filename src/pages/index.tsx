@@ -16,7 +16,7 @@ const Page: FC<PageProps> = () => {
   const [appList, setApplist] = useState<any>([]);
 
   useEffect(() => {
-    window.alita.ui.setNavBar({ backgroundColor: '00A0FF', color: 'FFFFFF', fontSize: '18' })
+    window.alita?.ui?.setNavBar({ backgroundColor: '00A0FF', color: 'FFFFFF', fontSize: '18' })
   }, [])
 
   return (<List
@@ -133,12 +133,15 @@ const Page: FC<PageProps> = () => {
         })
         return;
       }
-      const res = await window.alita.device.openMicroApp({ app: {}, userData: {} });
-      Modal.alert({
-        title: '打开微应用',
-        content:
-          JSON.stringify(res),
-      })
+      try {
+        const res = await window.alita.device.openMicroApp({ app: appList[0], userData: {} });
+      } catch (error) {
+        Modal.alert({
+          title: '打开微应用',
+          content:
+            JSON.stringify(error),
+        })
+      }
     }}>
       打开微应用
     </Item>

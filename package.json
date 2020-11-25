@@ -12,6 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "@ant-design/mobile": "^3.0.0-alpha.5",
-    "alita": "^2.5.17-beta.3"
+    "alita": "^2.6.5"
   }
 }
